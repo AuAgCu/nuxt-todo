@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  nuxt:
+    build: ./docker/nuxt
+    ports:
+      - 9001:3000
+    volumes:
+      - ./src:/workspace
+    working_dir: /workspace
+    command: npm run dev
