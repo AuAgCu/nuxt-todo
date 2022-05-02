@@ -3,7 +3,9 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req: any, res: any, next: any) {  // 変更箇所
-  res.render('index', { title: 'Express' });
+  var param = {"値":"これはサンプルAPIで"};
+  res.header('Content-Type', 'application/json; charset=utf-8')
+  res.send(param);
 });
 
 module.exports = router;

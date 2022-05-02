@@ -1,0 +1,5 @@
+{
+    "watch": ["src"],   // 監視対象とするフォルダを指定
+    "ext": "ts",    // 拡張子.tsを指定する
+    "exec": "ts-node ./src/index.ts"  // nodemonを起動したら実行されるスクリプト
+}
