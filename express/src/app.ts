@@ -17,6 +17,11 @@ app.get('/helloWorld', (req, res) => {
     res.status(200).send({ message: 'hello, world' });
 });
 
+app.post('/login', (req, res) => {
+    console.log(req.body);
+    res.status(200).send({ message: 'success' });
+});
+
 //サーバ起動
 app.listen(port);
 console.log('listen on port ' + port);

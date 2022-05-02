@@ -1,2 +1,4 @@
 express/node_modules/
 express/dist/
+
+.env
