@@ -15,4 +15,4 @@ services:
     volumes:
       - ./express:/express
     working_dir: /express
-    command: npm run dev
+    command: sh -c 'npx tsc; npm run dev'
