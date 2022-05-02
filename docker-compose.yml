@@ -5,6 +5,14 @@ services:
     ports:
       - 9001:3000
     volumes:
-      - ./nuxt/src:/workspace
-    working_dir: /workspace
+      - ./nuxt/src:/nuxt
+    working_dir: /nuxt
     command: npm run dev
+  express:
+    build: ./express
+    ports:
+      - 8080:10000
+    volumes:
+      - ./express:/express
+    working_dir: /express
+    command: npm start
